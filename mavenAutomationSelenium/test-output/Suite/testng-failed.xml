@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="com.ExtantReport.LoginExtantCustomizeReport">
+        <methods>
+          <include name="TestComplete"/>
+          <include name="LoginTC_001"/>
+          <include name="LoginTC_003"/>
+          <include name="LoginTC_002"/>
+          <include name="getResult"/>
+          <include name="startreport"/>
+        </methods>
+      </class> <!-- com.ExtantReport.LoginExtantCustomizeReport -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

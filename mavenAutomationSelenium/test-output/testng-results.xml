@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="73979" started-at="2021-02-12T18:46:41 BDT" finished-at="2021-02-12T18:47:55 BDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="73979" started-at="2021-02-12T18:46:41 BDT" finished-at="2021-02-12T18:47:55 BDT">
+      <class name="com.ExtantReport.LoginExtantCustomizeReport">
+        <test-method status="PASS" signature="startreport()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="startreport" is-config="true" duration-ms="230" started-at="2021-02-12T18:46:41 BDT" finished-at="2021-02-12T18:46:41 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startreport -->
+        <test-method status="PASS" signature="LoginTC_001()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="LoginTC_001" duration-ms="23888" started-at="2021-02-12T18:46:41 BDT" finished-at="2021-02-12T18:47:05 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTC_001 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="getResult" is-config="true" duration-ms="11" started-at="2021-02-12T18:47:05 BDT" finished-at="2021-02-12T18:47:05 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTC_001 status=SUCCESS method=LoginExtantCustomizeReport.LoginTC_001()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="FAIL" signature="LoginTC_002()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="LoginTC_002" duration-ms="21581" started-at="2021-02-12T18:47:05 BDT" finished-at="2021-02-12T18:47:27 BDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.ExtantReport.LoginExtantCustomizeReport.LoginTC_002(LoginExtantCustomizeReport.java:110)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTC_002 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="getResult" is-config="true" duration-ms="8" started-at="2021-02-12T18:47:27 BDT" finished-at="2021-02-12T18:47:27 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTC_002 status=FAILURE method=LoginExtantCustomizeReport.LoginTC_002()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="LoginTC_003()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="LoginTC_003" duration-ms="27451" started-at="2021-02-12T18:47:27 BDT" finished-at="2021-02-12T18:47:54 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTC_003 -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="getResult" is-config="true" duration-ms="1" started-at="2021-02-12T18:47:54 BDT" finished-at="2021-02-12T18:47:54 BDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginTC_003 status=SUCCESS method=LoginExtantCustomizeReport.LoginTC_003()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="TestComplete()[pri:0, instance:com.ExtantReport.LoginExtantCustomizeReport@4671e53b]" name="TestComplete" is-config="true" duration-ms="744" started-at="2021-02-12T18:47:54 BDT" finished-at="2021-02-12T18:47:55 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestComplete -->
+      </class> <!-- com.ExtantReport.LoginExtantCustomizeReport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
