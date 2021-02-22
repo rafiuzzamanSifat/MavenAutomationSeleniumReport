@@ -1,8 +1,20 @@
 package mavenAutomationSelenium;
 
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class BaseClass {
 
@@ -43,7 +55,24 @@ public class BaseClass {
 			System.out.println("Driver Not Found");
 		}
 	}
+	
+	public static void WindowSizepageScreenshot() throws IOException {
+		//Take Screenshot
+		File srcFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE); 
+		
+		//save file 
+		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir")+"\\Screenshot\\PageScreenshot.png"), true);
+		
+	}
+	
+	//shootingStrategy(ShootingStrategies.viewportPasting(1200).getScreenshot(driver));
 
+	
+	public static void FullPagepageScreenshot() throws IOException {
+		//Take full Screenshot
+		Screenshot screen=new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1200)).takeScreenshot(driver); 
+		ImageIO.write(screen.getImage(),"PNG",new File(System.getProperty("user.dir")+"\\Screenshot\\FullpageScreenshot.png")); 
+	}
 
 
 }
